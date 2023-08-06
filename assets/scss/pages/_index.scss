@@ -1,0 +1,30 @@
+.left-menu{
+  width: 23.125%;
+}
+.personalInformation{
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+  }
+}
+.right-content{
+  width: 100%;
+}
+.admin-header{
+  ul{
+    width: 100%;
+  }
+}
+.admin-table{
+  th{
+    font-size: 16px;
+  }
+  td{
+    height: 55px;
+  }
+  tbody th,td{
+    padding-top: 19px;
+    padding-bottom: 17px;
+  }
+}

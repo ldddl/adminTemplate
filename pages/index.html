@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- 長條圖 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- 人員 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Main-Admin</title>
+  </head>
+  <body>
+    <div class="admin d-flex">
+      <div class="left-menu p-32">
+        <img
+          class="mb-32"
+          src="/assets/images/logo-ANSWER.svg"
+          alt="logo-ANSWER"
+        />
+        <ul class="m-0 list-unstyled mb-360">
+          <li class="d-flex mb-24">
+            <span class="material-icons-outlined me-16"> bar_chart </span>
+            <p class="m-0">Dashboard</p>
+          </li>
+          <li class="d-flex mb-24">
+            <span class="material-icons-outlined me-16"> question_answer </span>
+            <p class="m-0">Question</p>
+          </li>
+          <li class="d-flex mb-24">
+            <span class="material-icons-outlined me-16"> assignment </span>
+            <p class="m-0">Assignment</p>
+          </li>
+          <li class="d-flex mb-24">
+            <span class="material-icons-outlined me-16"> video_library </span>
+            <p class="m-0">Course</p>
+          </li>
+          <li class="d-flex mb-24">
+            <span class="material-symbols-outlined me-16"> group </span>
+            <p class="m-0">Admin</p>
+          </li>
+          <li class="d-flex">
+            <span class="material-icons-outlined me-16"> settings </span>
+            <p class="m-0">Settings</p>
+          </li>
+        </ul>
+        <div class="personalInformation d-flex align-items-center">
+          <img
+            class="me-16"
+            src="/assets/images/andychen.jpeg"
+            alt="andychen"
+          />
+          <div class="personal-content">
+            <h2 class="fs-6">Andy Chen</h2>
+            <p class="text-secondary fs-14 m-0">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-content p-32">
+        <div class="conatiner">
+          <div class="admin-header d-flex align-items-center mb-24">
+            <h1 class="m-0 me-48 fs-24">Admin</h1>
+            <ul class="list-unstyled d-flex justify-content-between m-0">
+              <li class="d-flex align-items-center">
+                <span class="material-icons-outlined fs-24 me-8">add</span>
+                <h3 class="m-0 fs-16">Add New Admin</h3>
+              </li>
+              <li class="admin-header-icon d-flex align-items-center">
+                <span class="material-icons-outlined me-24">search</span>
+                <span class="material-icons-outlined">notifications_active</span>
+              </li>
+            </ul>
+          </div>
+          <table class="admin-table table">
+            <thead class="border-bottom border-dark">
+              <tr>
+                <th scope="col">
+                  ID
+                  <span class="material-icons-outlined fs-18">arrow_downward</span>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons-outlined me-24">visibility</span>
+                  <span class="material-icons-outlined">edit</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -30,39 +30,53 @@
   </head>
   <body>
     <div class="admin d-flex">
-      <div class="left-menu p-32">
+      <div class="left-menu py-32 pe-80">
         <img
-          class="mb-32"
+          class="mb-32 ps-32"
           src="/assets/images/logo-ANSWER.svg"
           alt="logo-ANSWER"
         />
-        <ul class="m-0 list-unstyled mb-360">
-          <li class="d-flex mb-24">
-            <span class="material-icons-outlined me-16"> bar_chart </span>
-            <p class="m-0">Dashboard</p>
+        <ul class="mb-360">
+          <li class="mb-24 ps-32">
+            <a href="#" class="d-flex text-black fw-bold">
+              <span class="material-icons-outlined me-16"> bar_chart </span>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="mb-24 ps-32">
+            <a href="#" class="d-flex text-black fw-bold">
+              <span class="material-icons-outlined me-16">
+                question_answer
+              </span>
+              <p>Question</p>
+            </a>
+          </li>
+          <li class="d-flex mb-24 ps-32">
+            <a href="#" class="d-flex text-black fw-bold">
+              <span class="material-icons-outlined me-16"> assignment </span>
+              <p>Assignment</p>
+            </a>
+          </li>
+          <li class="d-flex mb-24 ps-32">
+            <a href="#" class="d-flex text-black fw-bold">
+              <span class="material-icons-outlined me-16"> video_library </span>
+              <p>Course</p>
+              </a>
           </li>
           <li class="d-flex mb-24">
-            <span class="material-icons-outlined me-16"> question_answer </span>
-            <p class="m-0">Question</p>
+            <a href="#" class="left-menu-Admin d-flex fw-bold">
+              <span class="material-symbols-outlined me-16"> group </span>
+              <p>Admin</p>
+              </a>
           </li>
-          <li class="d-flex mb-24">
-            <span class="material-icons-outlined me-16"> assignment </span>
-            <p class="m-0">Assignment</p>
-          </li>
-          <li class="d-flex mb-24">
-            <span class="material-icons-outlined me-16"> video_library </span>
-            <p class="m-0">Course</p>
-          </li>
-          <li class="d-flex mb-24">
-            <span class="material-symbols-outlined me-16"> group </span>
-            <p class="m-0">Admin</p>
-          </li>
-          <li class="d-flex">
-            <span class="material-icons-outlined me-16"> settings </span>
-            <p class="m-0">Settings</p>
+          <li class="d-flex ms-32">
+            <a href="#" class="d-flex text-black fw-bold">
+              <span class="material-icons-outlined me-16"> settings </span>
+              <p>Settings</p>
+              </a>
           </li>
         </ul>
-        <div class="personalInformation d-flex align-items-center">
+        <div class="personalInformation d-flex align-items-center ps-32">
           <img
             class="me-16"
             src="/assets/images/andychen.jpeg"
@@ -70,31 +84,39 @@
           />
           <div class="personal-content">
             <h2 class="fs-6">Andy Chen</h2>
-            <p class="text-secondary fs-14 m-0">andy0401@mail.com</p>
+            <p class="text-secondary fs-14">andy0401@mail.com</p>
           </div>
         </div>
       </div>
       <div class="right-content p-32">
-        <div class="conatiner">
+        <div class="conatiner d-flex flex-column align-items-start">
           <div class="admin-header d-flex align-items-center mb-24">
-            <h1 class="m-0 me-48 fs-24">Admin</h1>
-            <ul class="list-unstyled d-flex justify-content-between m-0">
-              <li class="d-flex align-items-center">
-                <span class="material-icons-outlined fs-24 me-8">add</span>
-                <h3 class="m-0 fs-16">Add New Admin</h3>
+            <h1 class="me-48 fs-24">Admin</h1>
+            <ul class="d-flex justify-content-between align-items-center">
+              <li class="">
+                <a href="#" class="text-black d-flex align-items-center">
+                  <span class="material-icons-outlined fs-24 me-8">add</span>
+                  <h3 class="fs-16">Add New Admin</h3>
+                </a>
               </li>
-              <li class="admin-header-icon d-flex align-items-center">
-                <span class="material-icons-outlined me-24">search</span>
-                <span class="material-icons-outlined">notifications_active</span>
+              <li class="admin-header-icon  d-flex align-items-center">
+                <a href="#" class="text-black me-24 d-flex align-items-center">
+                  <span class="material-icons-outlined fs-24">search</span>
+                </a>
+                <a href="#" class="text-black d-flex align-items-center">
+                  <span class="material-icons-outlined fs-24">notifications_active</span>
+                </a>
               </li>
             </ul>
           </div>
-          <table class="admin-table table">
+          <table class="admin-table table table-hover mb-63">
             <thead class="border-bottom border-dark">
-              <tr>
+              <tr class="tw-bold">
                 <th scope="col">
                   ID
-                  <span class="material-icons-outlined fs-18">arrow_downward</span>
+                  <a href="#">
+                    <span class="material-icons-outlined fs-18 align-middle text-primary">arrow_downward</span>
+                  </a>
                 </th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
@@ -103,18 +125,125 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="align-middle">
                 <th scope="row">#1</th>
                 <td>Emir Wicks</td>
                 <td>emir.wicks@mail.com</td>
                 <td>Yes</td>
                 <td class="text-end">
-                  <span class="material-icons-outlined me-24">visibility</span>
-                  <span class="material-icons-outlined">edit</span>
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#9</th>
+                <td>tillie.lucero@mail.com</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="text-black me-24"><span class="material-icons-outlined">visibility</span></a>
+                  <a href="#" class="text-black"><span class="material-icons-outlined">edit</span></a>
                 </td>
               </tr>
             </tbody>
           </table>
+          <nav class="ms-auto">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

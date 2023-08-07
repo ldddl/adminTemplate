@@ -1,5 +1,5 @@
 .left-menu {
-  // width: 23.125%;
+  width: 296px !important;
   background-color: #F8F9FA;
 }
 .left-menu-Admin{
@@ -14,7 +14,7 @@
   }
 }
 .right-content {
-  width: 100%;
+  width: calc((100% - 296px));
 }
 .admin-header {
   width: 100%;
@@ -28,5 +28,13 @@
   }
   td {
     height: 55px;
+  }
+}
+.admin{
+  nav a{
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #198754;
   }
 }
